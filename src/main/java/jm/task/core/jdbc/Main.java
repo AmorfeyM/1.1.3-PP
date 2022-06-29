@@ -26,7 +26,6 @@ public class Main {
         userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
         System.out.println("User с именем – " + user4.getName() + " добавлен в базу данных");
 
-        //userService.getAllUsers().forEach(System.out :: println);
         for (User user : userService.getAllUsers()) {
             System.out.println(user.toString());
         }
